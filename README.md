@@ -2,7 +2,7 @@
 
 A comprehensive Python suite for calculating epilayer thickness via double-beam interference and simulating thin-film multi-beam interference, featuring numerical analysis and intuitive visualization tools for optical research and education.  
 
-[简体中文](README_zh.md) | [English](README.md)
+[简体中文](README/README_zh.md) | [English](README.md)
 
 ## Overview  
 
@@ -47,9 +47,10 @@ pip install numpy matplotlib
 
 ## Usage Examples  
 
-### 1. Epilayer Thickness Calculation  
+### 1. Epilayer Thickness Calculation
+
 ```python
-from doublebeam_epi_thickness import EpilayerThicknessCalculator
+from code.doublebeam_epi_thickness import EpilayerThicknessCalculator
 
 # Initialize with default parameters (SiC: n1=2.65, n2=2.68, etc.)
 calculator = EpilayerThicknessCalculator()
@@ -66,10 +67,10 @@ calculator.plot_sensitivity()
 
 # Example: Custom parameters for GaN
 gan_calculator = EpilayerThicknessCalculator(
-    n1=2.5,    # GaN epilayer refractive index
-    n2=2.55,   # GaN substrate refractive index
+    n1=2.5,  # GaN epilayer refractive index
+    n2=2.55,  # GaN substrate refractive index
     nu_tilde=750,  # Wavenumber (cm⁻¹)
-    m=2        # Interference order
+    m=2  # Interference order
 )
 gan_calculator.print_results()
 ```  

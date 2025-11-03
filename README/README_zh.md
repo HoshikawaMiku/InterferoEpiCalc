@@ -2,7 +2,7 @@
 
 一个全面的Python工具集，用于通过双光束干涉计算外延层厚度，以及模拟薄膜多光束干涉，具备数值分析和可视化功能。
 
-[English](README.md) | [简体中文](README_zh.md)
+[English](../README.md) | [简体中文](README_zh.md)
 
 ## 概述
 
@@ -48,8 +48,9 @@ pip install numpy matplotlib
 ## 使用示例
 
 ### 1. 外延层厚度计算
+
 ```python
-from doublebeam_epi_thickness import EpilayerThicknessCalculator
+from code.doublebeam_epi_thickness import EpilayerThicknessCalculator
 
 # 初始化计算器（默认参数为SiC：n1=2.65，n2=2.68等）
 calculator = EpilayerThicknessCalculator()
@@ -66,10 +67,10 @@ calculator.plot_sensitivity()
 
 # 示例：自定义GaN材料参数
 gan_calculator = EpilayerThicknessCalculator(
-    n1=2.5,    # GaN外延层折射率
-    n2=2.55,   # GaN衬底折射率
+    n1=2.5,  # GaN外延层折射率
+    n2=2.55,  # GaN衬底折射率
     nu_tilde=750,  # 波数（cm⁻¹）
-    m=2        # 干涉级次
+    m=2  # 干涉级次
 )
 gan_calculator.print_results()
 ```
