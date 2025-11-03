@@ -50,7 +50,7 @@ pip install numpy matplotlib
 ### 1. 外延层厚度计算
 
 ```python
-from code.doublebeam_epi_thickness import EpilayerThicknessCalculator
+from doublebeam_epi_thickness import EpilayerThicknessCalculator
 
 # 初始化计算器（默认参数为SiC：n1=2.65，n2=2.68等）
 calculator = EpilayerThicknessCalculator()

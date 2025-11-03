@@ -50,7 +50,7 @@ pip install numpy matplotlib
 ### 1. Epilayer Thickness Calculation
 
 ```python
-from code.doublebeam_epi_thickness import EpilayerThicknessCalculator
+from doublebeam_epi_thickness import EpilayerThicknessCalculator
 
 # Initialize with default parameters (SiC: n1=2.65, n2=2.68, etc.)
 calculator = EpilayerThicknessCalculator()
